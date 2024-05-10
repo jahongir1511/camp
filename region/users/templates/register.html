@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ro'yxatga olish</title>
+</head>
+<body>
+<h1>Ro'yxatga olish sahifasi</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="username">Foydalanuvchi nomi:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Parol:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <label for="confirm_password">Parolni tasdiqlang:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password"><br>
+    <input type="submit" value="Ro'yxatdan o'tish">
+</form>
+</body>
+</html>
